@@ -114,7 +114,7 @@ if (unique_solutions.length < 11) {
     ten_solutions += unique_solutions[randindex] + '<br>';
   }
   document.getElementById("list").innerHTML = ten_solutions;
-  document.write('<button onclick = "showAll()">Show all solutions</button>');
+  document.write('<button onclick = "showAll(); this.style.display = \'None\';">Show all solutions</button>');
 }
 
 //document.getElementById("show").addEventListener("click", showAll);

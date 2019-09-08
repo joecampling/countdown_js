@@ -2,6 +2,33 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  margin: 10px;
+}
+
 body {
   padding: 1em;
+}
+
+.list {
+
+}
+
+.container {
+  /*display: grid;*/
+  grid-auto-columns: 20%;
+}
+
+.test{
+  flex-basis: 20%;
+}
+
+.fullwidth {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.answer {
+  background-color: lime;
 }

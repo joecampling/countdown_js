@@ -77,7 +77,7 @@ function mainloop(listor, target) {
   }
 }
 
-let testmode = true;
+let testmode = false;
 if (testmode) {
   var numberslist = [1, 2, 3, 4, 5, 6];
   var target = 125;
@@ -134,7 +134,14 @@ function showAll() {
   document.getElementById("solutions").innerHTML = 'All solutions:';
   let all_solutions = '';
   for (let i = 0; i < unique_solutions.length; i++) {
-    all_solutions += unique_solutions[i] + '<br>';
+    let solution_split = unique_solutions[i].split(",");
+    all_solutions += '<div class = "fullwidth">';
+    for (let j = 0; j < solution_split.length - 2; j++) {
+      all_solutions += '<div class = "test"><h2>' + solution_split[j] + '</h2></div>';
+      var jj = j;
+    }
+    all_solutions += '<div class = "answer"><h2>' + solution_split[jj + 1] + '</h2></div>';
+    all_solutions += '</div>';
   }
   document.getElementById("list").innerHTML = all_solutions;
 }

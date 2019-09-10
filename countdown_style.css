@@ -10,15 +10,6 @@ body {
   padding: 1em;
 }
 
-.list {
-
-}
-
-.container {
-  /*display: grid;*/
-  grid-auto-columns: 20%;
-}
-
 .test{
   flex-basis: 20%;
 }
@@ -31,4 +22,19 @@ body {
 
 .answer {
   background-color: lime;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 12px;
 }
